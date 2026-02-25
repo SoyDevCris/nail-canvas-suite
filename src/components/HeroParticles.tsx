@@ -22,10 +22,10 @@ export default function HeroParticles() {
     let animId: number;
     const particles: Particle[] = [];
     const colors = [
-      "hsla(350,35%,70%,0.4)",
-      "hsla(38,60%,65%,0.3)",
-      "hsla(350,40%,85%,0.35)",
-      "hsla(30,30%,80%,0.3)",
+      "hsla(322,80%,55%,0.4)",
+      "hsla(322,60%,70%,0.3)",
+      "hsla(322,50%,85%,0.25)",
+      "hsla(0,0%,30%,0.2)",
     ];
 
     const resize = () => {
