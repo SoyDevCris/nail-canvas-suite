@@ -57,6 +57,9 @@ export default {
         gold: "hsl(var(--gold))",
         "gold-light": "hsl(var(--gold-light))",
         cream: "hsl(var(--cream))",
+        fuchsia: "hsl(var(--fuchsia))",
+        "fuchsia-light": "hsl(var(--fuchsia-light))",
+        dark: "hsl(var(--dark))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

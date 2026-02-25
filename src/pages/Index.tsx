@@ -5,6 +5,7 @@ import Layout from "@/components/Layout";
 import SectionReveal from "@/components/SectionReveal";
 import ServiceCard from "@/components/ServiceCard";
 import HeroParticles from "@/components/HeroParticles";
+import HandMockup from "@/components/HandMockup";
 import { services, testimonials, promotions, salonInfo } from "@/data/mockData";
 import heroImg from "@/assets/hero-nails.jpg";
 import salonImg from "@/assets/salon-interior.jpg";
@@ -63,13 +64,35 @@ const Index = () => {
               <div className="absolute -bottom-4 -left-4 animate-float rounded-2xl bg-background p-4 shadow-card">
                 <div className="flex items-center gap-2">
                   <div className="flex">
-                    {[1,2,3,4,5].map(i => <Star key={i} size={14} className="fill-gold text-gold" />)}
+                    {[1,2,3,4,5].map(i => <Star key={i} size={14} className="fill-primary text-primary" />)}
                   </div>
                   <span className="font-body text-xs font-medium text-muted-foreground">+500 clientas felices</span>
                 </div>
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Hand Mockup / Nail Preview */}
+      <section className="section-padding bg-card">
+        <div className="container-narrow">
+          <SectionReveal>
+            <div className="text-center">
+              <span className="font-body text-xs font-semibold uppercase tracking-widest text-primary">Prueba Virtual</span>
+              <h2 className="mt-2 font-display text-3xl font-bold text-foreground md:text-4xl">
+                ¿Cómo se verían tus uñas?
+              </h2>
+              <p className="mx-auto mt-4 max-w-lg font-body text-muted-foreground">
+                Selecciona un color y previsualiza cómo lucirían en tus manos.
+              </p>
+            </div>
+          </SectionReveal>
+          <SectionReveal delay={0.2}>
+            <div className="mt-10 flex justify-center">
+              <HandMockup />
+            </div>
+          </SectionReveal>
         </div>
       </section>
 
@@ -156,7 +179,7 @@ const Index = () => {
                 <div className="rounded-2xl border border-border bg-card p-6 shadow-card">
                   <div className="flex gap-1">
                     {Array.from({ length: t.rating }).map((_, j) => (
-                      <Star key={j} size={14} className="fill-gold text-gold" />
+                      <Star key={j} size={14} className="fill-primary text-primary" />
                     ))}
                   </div>
                   <p className="mt-4 font-body text-sm italic leading-relaxed text-muted-foreground">"{t.text}"</p>
